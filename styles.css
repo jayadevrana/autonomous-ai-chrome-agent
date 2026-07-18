@@ -1,0 +1,106 @@
+:root {
+  --bg: #eef4fa;
+  --panel: #ffffff;
+  --text: #0f172a;
+  --muted: #475569;
+  --border: #d5e1ef;
+  --primary: #0b3b66;
+  --secondary: #1e293b;
+  --danger: #7f1d1d;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  width: 320px;
+  font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.popup-wrap {
+  padding: 12px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.sub {
+  margin: 4px 0 10px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.btn-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+button {
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding: 9px 10px;
+  cursor: pointer;
+  font: inherit;
+  font-size: 13px;
+}
+
+button.primary {
+  background: var(--primary);
+  color: #e0f2fe;
+}
+
+button.secondary {
+  background: var(--secondary);
+  color: #e2e8f0;
+}
+
+button.danger {
+  width: 100%;
+  background: var(--danger);
+  color: #fee2e2;
+  margin-bottom: 10px;
+}
+
+.status-box {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  color: var(--muted);
+  margin-bottom: 6px;
+}
+
+.badge {
+  border-radius: 999px;
+  padding: 3px 10px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.badge.idle { background: #e2e8f0; color: #334155; }
+.badge.in_progress { background: #dbeafe; color: #1d4ed8; }
+.badge.completed { background: #dcfce7; color: #166534; }
+.badge.max_steps_reached { background: #fef3c7; color: #92400e; }
+.badge.error { background: #fee2e2; color: #b91c1c; }
+
+#statusText {
+  margin: 0;
+  white-space: pre-wrap;
+  font-size: 12px;
+  color: #1e293b;
+}

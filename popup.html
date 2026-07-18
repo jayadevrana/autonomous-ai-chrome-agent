@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Agent Controls</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="popup-wrap">
+      <h1>AI Agent Controls</h1>
+      <p class="sub">Use sidebar for full agent UI.</p>
+
+      <div class="btn-grid">
+        <button id="openSidebar" class="primary">Open Sidebar</button>
+        <button id="toggleSidebar" class="secondary">Toggle Sidebar</button>
+      </div>
+
+      <button id="stopAgent" class="danger">Stop Agent</button>
+
+      <section class="status-box">
+        <div class="row">
+          <span>Status</span>
+          <span id="statusBadge" class="badge idle">idle</span>
+        </div>
+        <p id="statusText">No active run.</p>
+      </section>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
